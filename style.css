@@ -91,3 +91,43 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--cy);outline-offset:
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 .inst{position:fixed;inset:auto 12px calc(12px + env(safe-area-inset-bottom,0px)) 12px;z-index:50;max-width:520px;margin:0 auto;display:none;align-items:center;gap:12px;background:rgba(14,14,28,.96);border:1px solid var(--line);border-radius:18px;padding:12px 14px;box-shadow:0 16px 40px -10px rgba(0,0,0,.7);backdrop-filter:blur(12px)}.inst.on{display:flex}.inst img{width:44px;height:44px;border-radius:11px;flex:none}.inst p{flex:1;margin:0;font-size:14.5px;line-height:1.45}.inst p b{display:block;font-size:15.5px}.inst .btn{padding:9px 18px;font-size:15px;border:0;cursor:pointer;flex:none}.inst .x{background:none;border:0;color:var(--ink);opacity:.6;font-size:20px;cursor:pointer;padding:4px;flex:none}
 .inst [hidden]{display:none!important}
+
+/* Kurdish font */
+@font-face{font-family:Rudaw;src:url(fonts/rudaw-regular.woff) format('woff');font-display:swap}
+html[lang=ku] body,html[lang=ku] h1,html[lang=ku] h2,html[lang=ku] h3,html[lang=ku] h4,html[lang=ku] .btn,html[lang=ku] .lang button{font-family:Rudaw,'Noto Sans Arabic',Tahoma,sans-serif}
+
+/* systems */
+.subh{font-size:22px;margin-top:30px;color:var(--ink)}
+.subh+.lead{margin-top:2px}
+#work>.subh:first-of-type{margin-top:22px}
+.systems{margin-top:18px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.sys{border-radius:20px;padding:1px;background:linear-gradient(150deg,rgba(25,211,245,.5),rgba(155,61,255,.3) 50%,rgba(255,61,190,.35));display:flex}
+.sys>*{background:var(--card)}
+.sys{flex-direction:column;overflow:hidden}
+.mock{position:relative;margin:1px 1px 0;border-radius:19px 19px 0 0;padding:16px 14px 12px;background:radial-gradient(ellipse 90% 80% at 50% 0%,rgba(61,92,255,.2),transparent 70%),#090a14;direction:ltr}
+.mt{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mt div{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center}
+.mt b{display:block;font-family:Outfit,sans-serif;font-size:19px;line-height:1.2;background:var(--cool);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mt small{display:block;font-size:11.5px;line-height:1.3;color:var(--mute)}
+.bars{display:flex;align-items:flex-end;gap:6px;height:64px;margin-top:12px;padding:0 4px;border-bottom:1px solid var(--line)}
+.bars i{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(180deg,var(--vi),var(--bl));opacity:.85}
+.bars i:last-child{background:linear-gradient(180deg,var(--mg),var(--or))}
+.demo{position:absolute;top:6px;inset-inline-end:10px;font-size:10px;color:var(--mute);opacity:.7}
+.mt{margin-top:6px}
+.sb{flex:1;margin:0 1px 1px;border-radius:0 0 19px 19px;padding:14px 18px 20px}
+.sb .badge{margin-top:0}
+.badge.live{background:linear-gradient(120deg,#12b886,#19d3f5)}
+.badge.dev{background:linear-gradient(120deg,var(--or),var(--ye));color:#1a1300}
+.ind{display:block;margin-top:8px;font-size:13.5px;color:var(--cy);font-weight:600}
+.sb h3{font-size:19px;margin-top:2px}
+.sb p{color:var(--mute);font-size:15.5px;margin-top:6px;line-height:1.65}
+
+/* features */
+.feat{margin-top:8px}
+.fg{margin-top:14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr))}
+.fg div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.fi{font-size:14px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fg h4{font-size:17.5px;line-height:1.35;margin-top:2px}
+.fg p{color:var(--mute);font-size:15.5px;margin-top:4px;line-height:1.6}
+#work .showcase{margin-top:16px}
+.svc .wide{grid-column:1/-1}
